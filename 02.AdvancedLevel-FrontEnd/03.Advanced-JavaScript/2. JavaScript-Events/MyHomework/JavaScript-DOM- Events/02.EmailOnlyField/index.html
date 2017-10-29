@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validator</title>
+    <style>
+        #wrapper {
+            width: 220px;
+            height: 200px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        input {
+            width: 216px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <input id="input" type="text" name="email" />
+    <div id="emptyDiv"></div>
+    <button type="button" onclick="checkEmail()">Validate</button>
+</div>
+<script>
+    function checkEmail() {
+
+        var email = document.getElementById('input');
+        var divForValidate = document.getElementById('emptyDiv').innerHTML;
+        var backgroundDiv =  document.getElementById('emptyDiv');
+        divForValidate = email.value;
+        document.getElementById('emptyDiv').innerHTML = divForValidate;
+
+        var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (regex.test(email.value)) {
+            backgroundDiv.style.backgroundColor = "lightgreen";
+        } else {
+            backgroundDiv.style.backgroundColor = 'red';
+        }
+    }
+</script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+
+<!--<html lang="en" xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta charset="utf-8" />-->
+<!--<title></title>-->
+
+<!--<script>-->
+<!--function validateInput(){-->
+<!--var inputElement = document.getElementById('input').value;-->
+
+<!--trimString(inputElement);-->
+
+<!--var divElementForValidate = document.getElementById('theDiv').innerHTML;-->
+
+<!--divElementForValidate = inputElement;-->
+<!--document.getElementById('theDiv').innerHTML = divElementForValidate;-->
+
+<!--var isValidEmail = validateEmail(inputElement);-->
+<!--console.log(isValidEmail);-->
+
+<!--if (isValidEmail) {-->
+<!--changeBackground('green');-->
+<!--}-->
+<!--else {-->
+<!--changeBackground('red')-->
+<!--}-->
+
+<!--}-->
+
+<!--function validateEmail(email) {-->
+<!--var result = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;-->
+<!--//var result = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;-->
+<!--return result.test(email);-->
+<!--}-->
+
+<!--function changeBackground(color) {-->
+<!--var element = document.getElementById('theDiv');-->
+<!--element.style.background = color;-->
+<!--}-->
+
+<!--function trimString(string) {-->
+<!--return string.trim();-->
+<!--}-->
+
+<!--</script>-->
+
+<!--<style>-->
+
+
+<!--</style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<table>-->
+<!--<tr>-->
+<!--<td>-->
+<!--<input id="input" type="text" name="name" value="" />-->
+<!--<div id="theDiv"></div>-->
+<!--<button type="button" onclick="validateInput()" onblur="this.value=removeSpaces(this.value)">Validate</button>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</table>-->
+
+
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,20 @@
+#wrapper{
+    width: 600px;
+    margin: auto;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 600px;
+    text-align: center;
+}
+th {
+    height: 50px;
+    background-color: antiquewhite;
+}
+tr:nth-child(even) {
+    background-color: aliceblue;
+}

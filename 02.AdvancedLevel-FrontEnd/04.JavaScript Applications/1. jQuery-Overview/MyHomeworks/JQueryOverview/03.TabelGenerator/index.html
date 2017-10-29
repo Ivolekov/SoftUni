@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Generator</title>
+    <script src="../libs/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <form>
+        <label for="input">Input JSON string</label>
+        <textarea type="input" id="input"></textarea>
+        <input type="button" id="btn" value="Create Table"/>
+    </form>
+    <div id="tableContainer"></div>
+</div>
+<script>
+    $('#input').val(
+            '[{"manufacturer":"BMW","model":"E92 320i","year":2011,"price":50000,"class":"Family"}, ' +
+            '{"manufacturer":"Porsche","model":"Panamera","year":2012,"price":100000,"class":"Sport"},' +
+            '{"manufacturer":"Peugeot","model":"305","year":1978,"price":1000,"class":"Family"}]');
+</script>
+<script src="script.js"></script>
+</body>
+</html>

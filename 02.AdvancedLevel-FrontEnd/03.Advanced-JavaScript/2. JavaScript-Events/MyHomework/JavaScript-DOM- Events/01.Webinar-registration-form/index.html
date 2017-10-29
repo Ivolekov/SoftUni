@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webinar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <h3>Регистрация за уебинар</h3>
+
+    <div>
+        <label>Име и Фамилия</label>
+        <span>*</span>
+        <input type="text" name="name" \>
+    </div>
+    <div>
+        <label>Адрес:</label>
+        <span>*</span>
+        <input type="text" name="name" \>
+    </div>
+    <div>
+        <label>Населено място:</label>
+        <span>*</span>
+        <input type="text" name="name" \>
+    </div>
+    <div>
+        <label>Пощенски код:</label>
+        <span>*</span>
+        <input type="text" name="name" \>
+    </div>
+    <div>
+        <label>Email:</label>
+        <span>*</span>
+        <input type="text" name="name" \>
+    </div>
+    <div>
+        <label>Телефон:</label>
+        <span>*</span>
+        <input type="text" name="name" \>
+    </div>
+    <div>
+        <label>Дата:</label>
+        <span>*</span>
+        <input type="text" name="name" value="mm / dd / yyyy" \>
+    </div>
+    <div>
+        <input type="checkbox" name="name" onclick="showContent(this,'showDiv')" \>
+        <label>Желая фактура</label>
+    </div>
+    <div id="showDiv">
+        <div>
+            <label>Фирма/Организация:</label>
+            <span>*</span>
+            <input type="text" name="name" \>
+        </div>
+        <div>
+            <label>МОЛ:</label>
+            <span>*</span>
+            <input type="text" name="name" \>
+        </div>
+        <div>
+            <label>ЕИК:</label>
+            <span>*</span>
+            <input type="text" name="name" \>
+        </div>
+        <div>
+            <label>ИН по ДДС:</label>
+            <span>*</span>
+            <input type="text" name="name" \>
+        </div>
+        <div>
+            <label>Адрес:</label>
+            <span>*</span>
+            <input type="text" name="name" \>
+        </div>
+    </div>
+    <div class="buttons">
+        <button>Регистрирай се</button>
+        <button>Изчисти</button>
+    </div>
+</div>
+<script>
+    document.getElementById('checkbox').onclick = function () {
+        showContent(this, 'wrapper');
+    };
+
+    function showContent(box, id) {
+        var element = document.getElementById(id);
+        if (box.checked) {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+var requester = app.requester.load('appKey','appSecret','baas.com')
+varuserModel = app.userModel.load(requester)
+
+userModel.login({username:'pesho', password:'1234'})
+		.then(function(success) {
+			console.log(success);
+		}).done();

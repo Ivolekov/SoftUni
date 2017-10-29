@@ -1,0 +1,34 @@
+#wrapper{
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+#input{
+    width: 550px;
+    height: 150px;
+    resize: none;
+}
+
+#btn{
+    width: 556px;
+}
+
+form{
+    width: 550px;
+    display: block;
+}
+
+#tableContainer{
+    margin-top: 40px;
+}
+table{
+    border-collapse: collapse;
+    width: 552px;
+}
+table,td{
+    border: 1px solid black;
+}
+th {
+    text-transform: capitalize;
+    background-color: green;
+}

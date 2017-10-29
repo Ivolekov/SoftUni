@@ -1,0 +1,41 @@
+#wrapper
+{
+    width: 700px;
+    margin: auto;
+}
+li
+{
+    margin-bottom: 30px;
+    display:block;
+    width:100%;
+    font-size:1.5em;
+    text-align:center;
+    background-color: chocolate;
+}
+#deleteButton
+{
+    border: none;
+    width: 100%;
+    background-color: tomato;
+}
+
+#editBook, #createBook
+{
+    width: 120px;
+    height: 22px;
+    border: none;
+    margin-left: 10px;
+    background-color: goldenrod;
+}
+#createBook
+{
+    background-color: lightgreen;
+}
+.divEdit
+{
+    margin-top: 20px;
+}
+form
+{
+    margin-left: 30px;
+}
