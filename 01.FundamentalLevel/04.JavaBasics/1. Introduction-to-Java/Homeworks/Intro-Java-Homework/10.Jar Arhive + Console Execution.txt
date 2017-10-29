@@ -1,0 +1,26 @@
+C:\Windows\system32>cd ..\..\
+
+C:\>cd Users\Viktor\Desktop\Workspace\Intro-Java-Homework
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework>cd src
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework\src>jar cvfe MyFirstJar.ja
+r SortArraysOfStrings SortArraysOfStrings.class
+added manifest
+adding: SortArraysOfStrings.class(in = 1082) (out= 643)(deflated 40%)
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework\src>java -jar MyFirstJar.j
+ar
+5
+burgas
+pleven
+plovdiv
+varna
+sofia
+burgas
+pleven
+plovdiv
+sofia
+varna
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework\src>

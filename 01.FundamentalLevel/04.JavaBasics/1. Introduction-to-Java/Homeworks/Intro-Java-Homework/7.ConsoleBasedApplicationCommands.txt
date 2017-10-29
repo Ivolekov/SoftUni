@@ -1,0 +1,19 @@
+
+C:\Users\Viktor>cd Desktop
+
+C:\Users\Viktor\Desktop>cd Workspace
+
+C:\Users\Viktor\Desktop\Workspace>cd Intro-Java-Homework
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework>cd src
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework\src>javac SumTwoNumbers.ja
+va
+
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework\src>java SumTwoNumbers
+Enter first number to sum:23123
+
+Entere second number to sum: 53543
+
+The sum of the two numbers is: 76666
+C:\Users\Viktor\Desktop\Workspace\Intro-Java-Homework\src>

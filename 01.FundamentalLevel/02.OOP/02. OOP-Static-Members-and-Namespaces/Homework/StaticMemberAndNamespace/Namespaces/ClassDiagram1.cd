@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Geometry.Geometry2D.Circle" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.DistanceCalculator2D" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\DistanceCalculator2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.Ellipse" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Ellipse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.Figure2D" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Figure2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.Point2D" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Point2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.Polygon" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Polygon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.Rectangle" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry2D.Square" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry2D\Square.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry3D.DistanceCalculator3D" Collapsed="true">
+    <Position X="5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry3D\DistanceCalculator3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry3D.Paths3D" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry3D\Paths3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Geometry3D.Points3D" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Geometry3D\Points3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Storage.GeometryBinaryStorage" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Storage\GeometryBinaryStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Storage.GeometrySVGStorage" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Storage\GeometrySVGStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.Storage.GeometryXMLStorage" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\Storage\GeometryXMLStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.UI.Sceen2D" Collapsed="true">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\UI\Sceen2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Geometry.UI.Screen3D" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geometry\UI\Screen3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Consolas" Size="10" />
+</ClassDiagram>
