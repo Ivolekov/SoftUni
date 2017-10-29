@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Write Youre Name</title>
+    <style>#myName {border: 2px solid black;}</style>
+</head>
+<body>
+    <canvas id="myName" width="800" height="600"></canvas>
+    <script>
+        var canvas = document.getElementById('myName');
+        var ctx = canvas.getContext('2d');
+        var text = 'George';
+        ctx.font = 120 + 'px' + ' Arial';
+        ctx.fillStyle = 'rgba(14,0,200,0.3)';
+        ctx.fillText(text, 200, 300);
+        ctx.lineWidth ='5';
+        ctx.strokeStyle = 'green';
+        ctx.strokeText(text, 200, 300);
+
+    </script>
+</body>
+</html>

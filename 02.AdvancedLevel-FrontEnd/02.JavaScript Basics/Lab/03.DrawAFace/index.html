@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draw a Face</title>
+    <style>
+        #face{border:2px solid black;}
+    </style>
+</head>
+<body>
+    <canvas id="face" width="800" height="600"></canvas>
+    <script>
+        var canvas = document.getElementById('face');
+        var ctx = canvas.getContext('2d');
+        ctx.lineWidth = '2';
+        ctx.fillStyle = '#90CAD7';
+
+        // head
+        ctx.strokeStyle ='#235661'
+        ctx.beginPath();
+        ctx.arc(400,350, 80, 0, 360);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+        //mouth
+        ctx.beginPath();
+        ctx.arc(380, 420, 40, rad(230), rad(310));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(380, 358, 40, rad(50), rad(130));
+        ctx.stroke();
+
+        //nose
+        ctx.beginPath();
+        ctx.moveTo(360, 360);
+        ctx.lineTo(380, 330);
+        ctx.stroke();
+        ctx.moveTo(360, 360);
+        ctx.lineTo(380, 360);
+        ctx.stroke();
+
+        //eyes
+        ctx.beginPath();
+        ctx.arc(350, 330, 15, rad(200), rad(340));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(350, 320, 15, rad(20), rad(160));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(346, 326, 3, rad(0), rad(360));
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(410, 330, 15, rad(200), rad(340));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(410, 320, 15, rad(20), rad(160));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(406, 326, 3, rad(0), rad(360));
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        //hat
+        ctx.fillStyle = '#396693';
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = '3';
+        drawEllipse(ctx, 310, 260, 180, 40);
+        ctx.fill();
+        drawCylinder(ctx, 360, 190, 80, 90);
+
+        function rad(deg){
+            return deg * Math.PI / 180;
+        }
+
+        function drawEllipse(ctx, x, y, w, h) {
+            var kappa = .5522848,
+                    ox = (w / 2) * kappa, // control point offset horizontal
+                    oy = (h / 2) * kappa, // control point offset vertical
+                    xe = x + w,           // x-end
+                    ye = y + h,           // y-end
+                    xm = x + w / 2,       // x-middle
+                    ym = y + h / 2;       // y-middle
+
+            ctx.beginPath();
+            ctx.moveTo(x, ym);
+            ctx.bezierCurveTo(x, ym - oy, xm - ox, y, xm, y);
+            ctx.bezierCurveTo(xm + ox, y, xe, ym - oy, xe, ym);
+            ctx.bezierCurveTo(xe, ym + oy, xm + ox, ye, xm, ye);
+            ctx.bezierCurveTo(xm - ox, ye, x, ym + oy, x, ym);
+            //ctx.closePath(); // not used correctly, see comments (use to close off open path)
+            ctx.stroke();
+        }
+
+
+        function drawCylinder(ctx, x, y, w, h) {
+            'use strict';
+            var i, xPos, yPos, pi = Math.PI, twoPi = 2 * pi;
+
+            ctx.beginPath();
+
+            for (i = 0; i < twoPi; i += 0.001) {
+                xPos = (x + w / 2) - (w / 2 * Math.cos(i));
+                yPos = (y + h / 8) + (h / 8 * Math.sin(i));
+
+                if (i === 0) {
+                    ctx.moveTo(xPos, yPos);
+                } else {
+                    ctx.lineTo(xPos, yPos);
+                }
+            }
+            ctx.moveTo(x, y + h / 8);
+            ctx.lineTo(x, y + h - h / 8);
+
+            for (i = 0; i < pi; i += 0.001) {
+                xPos = (x + w / 2) - (w / 2 * Math.cos(i));
+                yPos = (y + h - h / 8) + (h / 8 * Math.sin(i));
+
+                if (i === 0) {
+                    ctx.moveTo(xPos, yPos);
+                } else {
+                    ctx.lineTo(xPos, yPos);
+                }
+            }
+            ctx.moveTo(x + w, y + h / 8);
+            ctx.lineTo(x + w, y + h - h / 8);
+
+            ctx.fillRect(x, x-156, 80, 70);
+
+            ctx.fill();
+            ctx.stroke();
+        }
+    </script>
+</body>
+</html>

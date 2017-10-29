@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draw A House</title>
+    <style>
+        #house{border: 2px solid black;}
+    </style>
+</head>
+<body>
+    <canvas id="house" width="800px" height="600px"></canvas>
+    <script>
+        var canvas = document.getElementById('house');
+        var ctx = canvas.getContext('2d');
+        ctx.lineWidth = '3';
+        ctx.fillStyle = 'tomato';
+
+        //house-roof
+        ctx.beginPath();
+        ctx.moveTo(400, 50);
+        ctx.lineTo(250, 200);
+        ctx.lineTo(550, 200);
+        ctx.fill();
+        ctx.closePath();
+        ctx.stroke();
+
+        //chimney
+        ctx.fillRect(462, 94, 36, 80);
+        ctx.strokeRect(462, 94, 36, 80);
+        ctx.fillRect(460, 172, 40, 5);
+        ctx.beginPath();
+        ctx.arc(480, 110, 25, rad(220), rad(320));
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(480, 77, 25, rad(40), rad(140));
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        //house
+        ctx.fillRect(250, 200, 300, 250);
+        ctx.strokeRect(250, 200, 300, 250);
+
+        //windows
+        ctx.fillStyle = 'black';
+        ctx.fillRect(270, 230, 50, 30);
+        ctx.fillRect(322, 230, 50, 30);
+        ctx.fillRect(422, 230, 50, 30);
+        ctx.fillRect(474, 230, 50, 30);
+        ctx.fillRect(270, 262, 50, 30);
+        ctx.fillRect(322, 262, 50, 30);
+        ctx.fillRect(422, 262, 50, 30);
+        ctx.fillRect(474, 262, 50, 30);
+        ctx.fillRect(422, 350, 50, 30);
+        ctx.fillRect(474, 350, 50, 30);
+        ctx.fillRect(422, 382, 50, 30);
+        ctx.fillRect(474, 382, 50, 30);
+
+        //door
+        ctx.beginPath();
+        ctx.arc(320, 400, 40, rad(200), rad(340));
+        ctx.stroke();
+        ctx.moveTo(320, 360);
+        ctx.lineTo(320, 450);
+        ctx.stroke();
+        ctx.moveTo(283, 385);
+        ctx.lineTo(283, 450);
+        ctx.stroke();
+        ctx.moveTo(358, 385);
+        ctx.lineTo(358, 450);
+        ctx.stroke();
+
+        //handles
+        ctx.beginPath();
+        ctx.arc(310, 420, 4, rad(0), rad(360));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(330, 420, 4, rad(0), rad(360));
+        ctx.closePath();
+        ctx.stroke();
+
+        function rad(deg){
+            return deg * Math.PI / 180;
+        }
+
+    </script>
+</body>
+</html>

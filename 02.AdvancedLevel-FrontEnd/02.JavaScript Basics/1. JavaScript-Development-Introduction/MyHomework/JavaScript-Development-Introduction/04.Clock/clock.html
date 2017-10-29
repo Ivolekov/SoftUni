@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <script>
+        function starTime() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            minutes = check(minutes);
+            var seconds = date.getSeconds();
+            seconds = check(seconds);
+            var time = setTimeout(starTime, 1);
+            document.getElementById("time").innerHTML = hours +':'+ minutes +':'+ seconds;
+        }
+        function check(int){
+            if (int<10){
+                int  = "0" + int;
+            }
+            return int;
+        }
+    </script>
+</head>
+<body onload="starTime()">
+    <h2>The current time is:</h2>
+    <div id="time"></div>
+</body>
+</html>
