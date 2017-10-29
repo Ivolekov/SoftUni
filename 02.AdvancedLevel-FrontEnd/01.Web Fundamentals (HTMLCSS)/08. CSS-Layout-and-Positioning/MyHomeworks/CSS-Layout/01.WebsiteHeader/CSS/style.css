@@ -1,0 +1,77 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+header, a{
+    background-color: #234465;
+    color: white;
+}
+
+.container{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul#main-menu li{
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 5px;
+        margin: 2px;
+}
+
+ul#main-menu li:hover {
+    background-color: #4CA0DB;
+    cursor: pointer;
+            border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+div, ul#main-menu, form, nav {
+            display: inline-block;
+}
+
+ul.drop-down, div#notifications ul, div#user-menu ul{
+    display: none;
+    -webkit-padding-start: 0;
+}
+
+body{
+	font-family: Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+.notification>#notification-list{
+	display: none;
+}
+.user-menu>ul>#user-list{
+	display: none;
+}
+
+.down-menu>#menu-list>ul>li>ul>li{
+	display: none;
+}
+
+#manu-list,
+#menu-list>ul>li{
+	display: inline-block;
+}
+
+.conteiner{
+	background-color: #234465;
+}
+
+div, ul#main-menu, form, nav{
+	display: inline-block;
+}
+
+
+

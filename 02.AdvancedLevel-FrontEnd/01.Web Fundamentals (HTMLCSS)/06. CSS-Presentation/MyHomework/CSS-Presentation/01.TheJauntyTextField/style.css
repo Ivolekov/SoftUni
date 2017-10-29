@@ -1,0 +1,85 @@
+body{
+	font-family: Tahoma, sans-serif;
+	font-size: 18pt;}
+#rectangle{
+	width: 740px;
+	height: 340px;
+	border-top: dotted yellow 10px;
+	border-right: solid green 10px;
+	border-bottom: double blue 10px;
+	border-left: dashed red 10px;
+	box-shadow: 30px 30px 10px #3F3F3F;}
+#rectangle>p{
+	text-shadow:10px 12px 20px gray;
+	text-align: center;
+	font-size: 2.3em;
+	font-family: Tahoma;}
+#rainbow{
+	margin: 40px;
+	border-radius: 50px;
+	border: 2px solid red;
+	box-shadow: 
+	0 0 0 2px yellow, 
+	0 0 0 4px green, 
+	0 0 0 6px blue }
+#rainbow>p{
+	text-align: center;
+	font-size: 1.1em;
+	text-shadow:15px 15px 25px gray;
+	margin-bottom: 24px;}
+#left{
+	font-weight: bold;
+	margin-left: 130px;
+	margin-bottom: 10px;}
+#right{
+	margin-bottom: 10px;
+	font-weight: bold;}
+textarea{
+	font-family: Tahoma;
+	font-size:15px;
+	color: black;
+	resize: none;
+	width: 200px;
+    height: 18px;
+	text-align: center;
+	background-color: #D8921A;
+	border-top: solid 3px #FCA401;
+	border-right: solid 3px #FCA401;
+	border-bottom: solid 3px #A56401;
+	border-left: solid 3px #A56401;}
+#smallBubble{
+
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: dashed white;
+	background-color:rgba(128, 128, 128, 0.6);
+	box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.6);
+	position: absolute;
+	left: 585px;
+	top: 255px;
+}
+#bigBubble
+	{border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border: dashed white;
+	background-color:rgba(128, 128, 128, 0.6);
+	box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.6);
+	position: absolute;
+	left: 640px;
+	top: 205px;}
+#textBubble{
+	border-radius: 50px;
+	width: 130px;
+	height: 70px;
+	text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 7px;
+	border: dashed white;
+	background-color:rgba(128, 128, 128, 0.6);
+	box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.6);
+	position: absolute;
+	left: 720px;
+	top: 120px;}

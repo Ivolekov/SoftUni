@@ -1,0 +1,296 @@
+﻿$border: double 3px gray;
+$solid-border: solid 1px gray;
+
+@mixin default-border {
+    width: 900px;
+    border: $border;
+    margin: 20px;
+}
+
+@mixin default-solid-border {
+    width: 860px;
+    border: $solid-border;
+    margin: 20px;
+}
+
+@mixin default-title-font {
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: gray;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@mixin default-font {
+    font-size: 0.5em;
+    color: gray;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@mixin color-box-size {
+    display: inline-block;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+@mixin create-gradient($type, $direction, $startColor, $endColor) {
+    @if $type=='linear' {
+        background: linear-gradient(to $direction, $startColor,$endColor);
+    }
+    @else {
+        background: radial-gradient($startColor, $endColor);
+    }
+}
+
+body {
+    font: 20px Tahoma;
+
+    #wrapper {
+        width: 945px;
+        margin: auto;
+        border: $border;
+
+        > header {
+            @include default-border;
+
+            h1 {
+                text-align: center;
+                color: gray;
+                margin: 5px auto;
+            }
+
+            ul {
+                margin: 10px auto;
+            }
+
+            li {
+                display: inline-block;
+                margin: 15px auto;
+            }
+
+            li:first-child {
+                margin-left: 150px;
+            }
+
+            a {
+                text-decoration: none;
+                margin: 30px;
+                border: $border;
+                padding: 5px 15px;
+                color: gray;
+            }
+
+            a:hover {
+                background: linear-gradient(gray,white);
+                color: white;
+                cursor: default;
+            }
+        }
+
+        .linear {
+            @include default-border;
+
+            #linear {
+                > h1 {
+                    @include default-title-font;
+                }
+            }
+
+            #vertical {
+                @include default-font;
+            }
+
+            #horizontal {
+                @include default-font;
+            }
+
+            #diagonal {
+                @include default-font;
+            }
+
+            article {
+                @include default-solid-border;
+            }
+
+            .innerContainer {
+                width: 760px;
+                font-size: 0;
+            }
+        }
+
+        article:nth-child(2) {
+            .purple {
+                @include color-box-size;
+                @include create-gradient(linear, bottom, purple, white);
+                margin-left: 130px;
+            }
+
+            .blue {
+                @include color-box-size;
+                @include create-gradient(linear, bottom, blue, white);
+                background-color: blue;
+            }
+
+            .green {
+                @include color-box-size;
+                @include create-gradient(linear, bottom, green, white);
+            }
+
+            .yellow {
+                @include color-box-size;
+                @include create-gradient(linear, bottom, yellow, white);
+            }
+
+            .orange {
+                @include color-box-size;
+                @include create-gradient(linear, bottom, orange, white);
+            }
+
+            .red {
+                @include color-box-size;
+                @include create-gradient(linear, bottom, red, white);
+            }
+        }
+
+        article:nth-child(3) {
+            .purple {
+                @include color-box-size;
+                @include create-gradient(linear, right, purple, white);
+                margin-left: 130px;
+            }
+
+            .blue {
+                @include color-box-size;
+                @include create-gradient(linear, right, blue, white);
+                background-color: blue;
+            }
+
+            .green {
+                @include color-box-size;
+                @include create-gradient(linear, right, green, white);
+            }
+
+            .yellow {
+                @include color-box-size;
+                @include create-gradient(linear, right, yellow, white);
+            }
+
+            .orange {
+                @include color-box-size;
+                @include create-gradient(linear, right, orange, white);
+            }
+
+            .red {
+                @include color-box-size;
+                @include create-gradient(linear, right, red, white);
+            }
+        }
+
+        article:nth-child(4) {
+            .purple {
+                @include color-box-size;
+                @include create-gradient(linear, right bottom, purple, white);
+                margin-left: 130px;
+            }
+
+            .blue {
+                @include color-box-size;
+                @include create-gradient(linear, right bottom, blue, white);
+                background-color: blue;
+            }
+
+            .green {
+                @include color-box-size;
+                @include create-gradient(linear, right bottom, green, white);
+            }
+
+            .yellow {
+                @include color-box-size;
+                @include create-gradient(linear, right bottom, yellow, white);
+            }
+
+            .orange {
+                @include color-box-size;
+                @include create-gradient(linear, right bottom, orange, white);
+            }
+
+            .red {
+                @include color-box-size;
+                @include create-gradient(linear, right bottom, red, white);
+            }
+        }
+
+        .radial {
+            @include default-border;
+
+            #radial {
+                > h1 {
+                    @include default-title-font;
+                }
+            }
+
+
+            article {
+
+                @include default-solid-border;
+                .innerContainer {
+                    width: 760px;
+                    font-size: 0;
+                }
+                .purple {
+                    @include color-box-size;
+                    @include create-gradient(radial, right bottom, purple, white);
+                    margin-left: 130px;
+                }
+
+                .blue {
+                    @include color-box-size;
+                    @include create-gradient(radial, right bottom, blue, white);
+                }
+
+                .green {
+                    @include color-box-size;
+                    @include create-gradient(radial, right bottom, green, white);
+                }
+
+                .yellow {
+                    @include color-box-size;
+                    @include create-gradient(radial, right bottom, yellow, white);
+                }
+
+                .orange {
+                    @include color-box-size;
+                    @include create-gradient(radial, right bottom, orange, white);
+                }
+
+                .red {
+                    @include color-box-size;
+                    @include create-gradient(radial, right bottom, red, white);
+                }
+            }
+        }
+    }
+    
+    footer{
+        @include default-border;
+        h3{
+            @include default-title-font;
+        }
+        li{
+            display:block;
+            text-align:center;
+        }
+        a{
+            text-decoration:none;
+            @include default-font;
+            font-size:0.8em;
+        }
+        ul{
+            padding:0;
+        }
+    }
+}

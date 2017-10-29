@@ -1,0 +1,306 @@
+﻿@-moz-keyframes shaking {
+    0% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    2% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    4% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    6% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    8% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    10% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    30% {
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+
+    45% {
+        -moz-transform: scale(2) rotate(120deg);
+        -ms-transform: scale(2) rotate(120deg);
+        -o-transform: scale(2) rotate(120deg);
+        -webkit-transform: scale(2) rotate(120deg);
+        transform: scale(2) rotate(120deg);
+    }
+
+    60% {
+        -moz-transform: scale(2) rotate(240deg);
+        -ms-transform: scale(2) rotate(240deg);
+        -o-transform: scale(2) rotate(240deg);
+        -webkit-transform: scale(2) rotate(240deg);
+        transform: scale(2) rotate(240deg);
+    }
+
+    75% {
+        -moz-transform: scale(2) rotate(360deg);
+        -ms-transform: scale(2) rotate(360deg);
+        -o-transform: scale(2) rotate(360deg);
+        -webkit-transform: scale(2) rotate(360deg);
+        transform: scale(2) rotate(360deg);
+    }
+
+    100% {
+        -moz-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+        -o-transform: scale(1) rotate(360deg);
+        -webkit-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes shaking {
+    0% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    2% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    4% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    6% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    8% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    10% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    30% {
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+
+    45% {
+        -moz-transform: scale(2) rotate(120deg);
+        -ms-transform: scale(2) rotate(120deg);
+        -o-transform: scale(2) rotate(120deg);
+        -webkit-transform: scale(2) rotate(120deg);
+        transform: scale(2) rotate(120deg);
+    }
+
+    60% {
+        -moz-transform: scale(2) rotate(240deg);
+        -ms-transform: scale(2) rotate(240deg);
+        -o-transform: scale(2) rotate(240deg);
+        -webkit-transform: scale(2) rotate(240deg);
+        transform: scale(2) rotate(240deg);
+    }
+
+    75% {
+        -moz-transform: scale(2) rotate(360deg);
+        -ms-transform: scale(2) rotate(360deg);
+        -o-transform: scale(2) rotate(360deg);
+        -webkit-transform: scale(2) rotate(360deg);
+        transform: scale(2) rotate(360deg);
+    }
+
+    100% {
+        -moz-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+        -o-transform: scale(1) rotate(360deg);
+        -webkit-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes shaking {
+    0% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    2% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    4% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    6% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    8% {
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    10% {
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    30% {
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+
+    45% {
+        -moz-transform: scale(2) rotate(120deg);
+        -ms-transform: scale(2) rotate(120deg);
+        -o-transform: scale(2) rotate(120deg);
+        -webkit-transform: scale(2) rotate(120deg);
+        transform: scale(2) rotate(120deg);
+    }
+
+    60% {
+        -moz-transform: scale(2) rotate(240deg);
+        -ms-transform: scale(2) rotate(240deg);
+        -o-transform: scale(2) rotate(240deg);
+        -webkit-transform: scale(2) rotate(240deg);
+        transform: scale(2) rotate(240deg);
+    }
+
+    75% {
+        -moz-transform: scale(2) rotate(360deg);
+        -ms-transform: scale(2) rotate(360deg);
+        -o-transform: scale(2) rotate(360deg);
+        -webkit-transform: scale(2) rotate(360deg);
+        transform: scale(2) rotate(360deg);
+    }
+
+    100% {
+        -moz-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+        -o-transform: scale(1) rotate(360deg);
+        -webkit-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+body {
+    #wrapper {
+        width: 520px;
+        margin: auto;
+        border: 1px solid black;
+    }
+
+    img {
+        width: 170px;
+        height: 120px;
+    }
+
+    #conteiner {
+        display: inline-block;
+    }
+
+    #conteiner:hover {
+        cursor: pointer;
+        -moz-animation-name: shaking;
+        -o-animation-name: shaking;
+        -webkit-animation-name: shaking;
+        animation-name: shaking;
+        -moz-animation-delay: 0.0s;
+        -o-animation-delay: 0.0s;
+        -webkit-animation-delay: 0.0s;
+        animation-delay: 0.0s;
+        -moz-animation-duration: 3.00s;
+        -o-animation-duration: 3.00s;
+        -webkit-animation-duration: 3.00s;
+        animation-duration: 3.00s;
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}

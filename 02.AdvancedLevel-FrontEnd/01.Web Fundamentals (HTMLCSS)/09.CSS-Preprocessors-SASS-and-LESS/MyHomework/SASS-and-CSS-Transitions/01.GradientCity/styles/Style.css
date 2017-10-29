@@ -1,0 +1,400 @@
+﻿body {
+  font: 20px Tahoma;
+}
+
+body #wrapper {
+  width: 945px;
+  margin: auto;
+  border: double 3px gray;
+}
+
+body #wrapper > header {
+  width: 900px;
+  border: double 3px gray;
+  margin: 20px;
+}
+
+body #wrapper > header h1 {
+  text-align: center;
+  color: gray;
+  margin: 5px auto;
+}
+
+body #wrapper > header ul {
+  margin: 10px auto;
+}
+
+body #wrapper > header li {
+  display: inline-block;
+  margin: 15px auto;
+}
+
+body #wrapper > header li:first-child {
+  margin-left: 150px;
+}
+
+body #wrapper > header a {
+  text-decoration: none;
+  margin: 30px;
+  border: double 3px gray;
+  padding: 5px 15px;
+  color: gray;
+}
+
+body #wrapper > header a:hover {
+  background: linear-gradient(gray, white);
+  color: white;
+  cursor: default;
+}
+
+body #wrapper .linear {
+  width: 900px;
+  border: double 3px gray;
+  margin: 20px;
+}
+
+body #wrapper .linear #linear > h1 {
+  text-decoration: underline;
+  font-size: 1.1em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+}
+
+body #wrapper .linear #vertical {
+  font-size: 0.5em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+}
+
+body #wrapper .linear #horizontal {
+  font-size: 0.5em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+}
+
+body #wrapper .linear #diagonal {
+  font-size: 0.5em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+}
+
+body #wrapper .linear article {
+  width: 860px;
+  border: solid 1px gray;
+  margin: 20px;
+}
+
+body #wrapper .linear .innerContainer {
+  width: 760px;
+  font-size: 0;
+}
+
+body #wrapper article:nth-child(2) .purple {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, purple, white);
+  margin-left: 130px;
+}
+
+body #wrapper article:nth-child(2) .blue {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, blue, white);
+  background-color: blue;
+}
+
+body #wrapper article:nth-child(2) .green {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, green, white);
+}
+
+body #wrapper article:nth-child(2) .yellow {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, yellow, white);
+}
+
+body #wrapper article:nth-child(2) .orange {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, orange, white);
+}
+
+body #wrapper article:nth-child(2) .red {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, red, white);
+}
+
+body #wrapper article:nth-child(3) .purple {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right, purple, white);
+  margin-left: 130px;
+}
+
+body #wrapper article:nth-child(3) .blue {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right, blue, white);
+  background-color: blue;
+}
+
+body #wrapper article:nth-child(3) .green {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right, green, white);
+}
+
+body #wrapper article:nth-child(3) .yellow {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right, yellow, white);
+}
+
+body #wrapper article:nth-child(3) .orange {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right, orange, white);
+}
+
+body #wrapper article:nth-child(3) .red {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right, red, white);
+}
+
+body #wrapper article:nth-child(4) .purple {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, purple, white);
+  margin-left: 130px;
+}
+
+body #wrapper article:nth-child(4) .blue {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, blue, white);
+  background-color: blue;
+}
+
+body #wrapper article:nth-child(4) .green {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, green, white);
+}
+
+body #wrapper article:nth-child(4) .yellow {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, yellow, white);
+}
+
+body #wrapper article:nth-child(4) .orange {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, orange, white);
+}
+
+body #wrapper article:nth-child(4) .red {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, red, white);
+}
+
+body #wrapper .radial {
+  width: 900px;
+  border: double 3px gray;
+  margin: 20px;
+}
+
+body #wrapper .radial #radial > h1 {
+  text-decoration: underline;
+  font-size: 1.1em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+}
+
+body #wrapper .radial article {
+  width: 860px;
+  border: solid 1px gray;
+  margin: 20px;
+}
+
+body #wrapper .radial article .innerContainer {
+  width: 760px;
+  font-size: 0;
+}
+
+body #wrapper .radial article .purple {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: radial-gradient(purple, white);
+  margin-left: 130px;
+}
+
+body #wrapper .radial article .blue {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: radial-gradient(blue, white);
+}
+
+body #wrapper .radial article .green {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: radial-gradient(green, white);
+}
+
+body #wrapper .radial article .yellow {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: radial-gradient(yellow, white);
+}
+
+body #wrapper .radial article .orange {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: radial-gradient(orange, white);
+}
+
+body #wrapper .radial article .red {
+  display: inline-block;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: radial-gradient(red, white);
+}
+
+body footer {
+  width: 900px;
+  border: double 3px gray;
+  margin: 20px;
+}
+
+body footer h3 {
+  text-decoration: underline;
+  font-size: 1.1em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+}
+
+body footer li {
+  display: block;
+  text-align: center;
+}
+
+body footer a {
+  text-decoration: none;
+  font-size: 0.5em;
+  color: gray;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+
+body footer ul {
+  padding: 0;
+}
+
+/*# sourceMappingURL=Style.css.map */
